@@ -8,7 +8,7 @@ namespace LEARNING_CONCEPTS.Learn700
 		public static void Main(string[] args)
 		{
 			// **************************************************
-			System.Func<int, int> myDelegate1 = (x) => { int y = x + 5; return (y); };
+			System.Func<int, int> myDelegate1 = (int x) => { int y = x + 5; return (y); };
 
 			int intResult1 = myDelegate1(10);
 
@@ -16,7 +16,7 @@ namespace LEARNING_CONCEPTS.Learn700
 			// **************************************************
 
 			// **************************************************
-			System.Func<int, int> myDelegate2 = (x) => x + 5;
+			System.Func<int, int> myDelegate2 = (int x) => x + 5;
 
 			int intResult2 = myDelegate2(10);
 
@@ -24,6 +24,7 @@ namespace LEARNING_CONCEPTS.Learn700
 			// **************************************************
 
 			// **************************************************
+			// Note: It's better you remove input data type!
 			// Note: You can remove (), if you have just one variable!
 			System.Func<int, int> myDelegate3 = x => x + 5;
 
